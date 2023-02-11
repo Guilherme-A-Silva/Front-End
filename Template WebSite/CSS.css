@@ -1,0 +1,215 @@
+* {
+  /* Fazendo isso, voce consegue aplicar em todo o site um padrao. */
+  margin: 0; /* Tirei a margem de todo o codigo, para que assim eu possa manipular os itens com mais facilidade*/
+}
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+body {
+  font-family: 'DM Sans'; /* Apliquei essa fonte a todo o meu body, tudo dentro dele possui essa fonte*/
+  font-style: normal; /* Defini como estilo nromal todo o body  */
+}
+.PrimeiraCaixa {
+  position: absolute; /* Tornei essa Div Absoluta, ou seja. Feito isso, posso manipular a posicao dela com mais facilidade. Usando os comandos top e left. Apesar de que nao foi necessario*/
+  width: 100vw; /* Definindo Largura */
+  height: 80rem; /* Altura */
+  background-color: #dce9e2; /* Cor de fundo */
+}
+
+.PrimeiraCaixa img {
+  position: absolute; /* Comando para facilitar a mudanca de posicao do item */
+  width: 42rem; /* Definindo Largura */
+  height: 54.9rem; /* Definindo Altura */
+  margin-top: 7.4rem; /*Aplicando uma Margem de seguranca para o lado superior  */
+  margin-left: 5.1rem; /*Aplicando uma Margem de seguranca para o lado esquerdo*/
+  margin-right: 16.7rem; /*Aplicando uma Margem de seguranca para o lado direito */
+  left: 77.9rem; /* Definindo a posicao exata que o item ficara, seguindo a logica do plano cartesiano.*/
+  top: 7.4rem; /* Definindo a posicao exata que o item ficara, seguindo a logica do plano cartesiano. */
+}
+body .SegundaCaixa {
+  margin-left: 12.3rem; /* Margem de seguranca para o lado esquerdo */
+  margin-top: 15.2rem; /* Margem de seguranca para o lado superior */
+  margin-right: 63.8rem; /* Margem de seguranca para o lado direito */
+  margin-bottom: 19.1rem; /* Margem de seguranca para o lado inferior */
+
+  /* Sempre que for mencionado margin, pense em espacamento. Pois essa margem e uma area de 
+  seguranca onde nela, temos um espacamento. Sempre que quiser ter uma margem de seguranca entre blocos, que sao divs.
+  Basta usar os margin- ...
+  */
+
+  display: flex; /* Feito isso, consigo alinhar todos os itens da div. Lembrando que div e uma agrupamento de itens */
+  flex-direction: column; /* Colocando o display, como flex. A gente deixa os itens um ao lado do outro. 
+  Porem podemos deixa-los alinhados em coluna. */
+  align-items: left; /* Alinhei os itens a esquerda do site */
+
+  position: absolute; /* Apos esse comando, eu libero os comandos de manipulacao. Onde com isso facilita a mudanca dos objetos*/
+  width: 60.5rem; /* Definindo Largura */
+  height: 33.5rem; /* Definindo Altura */
+  left: 12.3rem; /* Definindo a posicao exata que o item ficara, seguindo a logica do plano cartesiano. */
+  top: 15.2rem; /* Definindo a posicao exata que o item ficara, seguindo a logica do plano cartesiano. */
+}
+
+.SegundaCaixa h3 {
+  margin-bottom: 1.6rem; /* Margem de seguranca para o lado inferior */
+
+  font-weight: 700; /* Definindo o peso da fonte */
+  font-size: 1.4rem; /* Definindo o tamanho da fonte*/
+  line-height: 150%; /* Definindo a altura das linhas */
+
+  letter-spacing: 0.08em; /* Definindo o espacamento entre letras*/
+
+  color: #00856f; /* Aplicando cor as letras, obs: Podemos usar diversos formatos, seja rgb, hex ou outro qualquer... */
+}
+
+.SegundaCaixa h1 {
+  margin-bottom: 2.4rem; /* Margem de seguranca para o lado inferior  */
+
+  font-weight: 700; /* Definindo o peso da fonte */
+  font-size: 5.2rem; /* Definindo o tamanho da fonte */
+  line-height: 130%; /* Definindo a altura das linhas */
+}
+.SegundaCaixa p {
+  margin-top: 2.4rem; /* Margem de seguranca para o lado superior */
+  margin-bottom: 3.2rem; /* Margem de seguranca para o lado inferior */
+
+  font-weight: 400; /* Definindo o peso da fonte */
+  font-size: 1.8rem; /* Definindo o tamanho da fonte */
+  line-height: 150%; /* Definindo a altura das linhas */
+
+  color: #495057; /* Aplicando cor as letras */
+}
+.SegundaCaixa button {
+  /* Alinhamento de itens do botao */
+
+  display: flex; /* Feito isso, consigo alinhar todos os itens da div. Lembrando que div e uma agrupamento de itens */
+  flex-direction: row; /* Mudei a direcao do flex para filiera */
+
+  /* Espacos nos laterais superiores, inferiores e lados... */
+
+  padding-top: 1.6rem; /* Espaco da Lateral Superior Interior*/
+  padding-bottom: 1.6rem; /* Espaco da Lateral Inferior Interior*/
+  padding-left: 3.2rem; /* Espaco da Lado Esquerdo Interior*/
+  padding-right: 3.2rem; /* Espaco da Lado Direito Interior*/
+  border-radius: 4rem; /* Arredontamento de Bordas */
+  gap: 1.6rem; /* Espacamento entre itens */
+
+  /* Dimensoes do BOTAO */
+
+  width: 26.3rem; /* Largura do botao */
+  height: 5.2rem; /* Altura do botao */
+  border: none; /* Retirei a borda do item, no caso a do botao */
+  background-color: #00856f; /* Coloquei uma cor de fundo no botao*/
+
+  /* Pense comigo que o left representa o X de um plano cartesiano e o top e o Y do plano
+   Sendo assim, se colocassemos left: 0px; o nosso botao ficaria colado na borda esquerda do codigo, e se 
+   aumentarmos o valor... Ele vai indo para direita. Mesmo conceito de aplica ao Top.
+  */
+
+  border-top: 3.2rem; /* Margem de seguranca para o lado superior */
+  border-bottom: 8.4rem; /* Margem de seguranca para o lado inferior  */
+
+  font-weight: 700; /* Definindo o peso da fonte */
+  font-size: 1.3rem; /* Definindo o tamanho da fonte */
+  line-height: 1.8rem; /* Definindo a altura das linhas */
+  text-transform: uppercase; /* Transformei todo o texto em letras maiúscula */
+  color: #ffffff; /* Apliquei uma cor no texto */
+}
+.stat p,
+.stat1 p {
+  font-weight: 400; /* Definindo o peso da fonte */
+  font-size: 1.6rem; /* Definindo o tamanho da fonte */
+  line-height: 150%; /* Definindo a altura das linhas */
+
+  color: #00856f; /* Apliquei uma cor no texto */
+}
+.stat h1,
+.stat1 h1 {
+  font-weight: 700; /* Definindo o peso da fonte */
+  font-size: 4.8rem; /* Definindo o tamanho da fonte */
+  line-height: 130%; /* Definindo a altura das linhas */
+
+  color: #212529; /* Apliquei uma cor no texto */
+}
+.stat1 {
+  margin-left: 12rem; /* Margem de seguranca para o lado esquerdo */
+}
+.stats {
+  box-sizing: border-box; /* Alterei o tamanho da borda */
+
+  position: absolute; /* Com esse comando liberamos a opcao de manipular a posicao dele, usando o conceito de plano cartesiano*/
+  width: 112rem; /* Largura*/
+  height: 21rem; /* Altura */
+  background: #fffaf1; /* Apliquei uma cor de fundo */
+  border: 0.1rem solid #dce9e2; /* Apliquei uma cor a borda*/
+
+  display: flex; /* Alinhei os itens com o comando flex, para que ficassem um ao lado do outro*/
+  gap: 20rem; /* Dei um espacamento de 200pixels entre os itens */
+
+  margin-inline: 123px; /* Apliquei a margem de seguranca nos dois lados da div. Esse comando e o mesmo que fazer o
+  margin-left: 123px; e o margin-right: 123px. Esse em linha e a juncao dos dois*/
+  margin-top: 67.8rem; /* Apliquei uma margem de seguranca no topo do site */
+}
+
+.stat,
+.stat1 {
+  padding-block: 6rem; /*Esse comando facilida o uso do margin-top e margin-botton. Ele simplifica os dois*/
+  text-align: center; /* Alinhei todo o texto ao centro*/
+}
+.menu {
+  position: absolute; /* Com esse comando liberamos a opcao de manipular a posicao dele, usando o conceito de plano cartesiano*/
+  z-index: 1; /* Usando a ideia de geometria espacial, com esse comando que e liberado apos o postion: obsolute. 
+  Posso sobrepor itens, como se eu levasse os para outro plano */
+  display: flex; /* Alinhei os itens em linha */
+  width: 136.6rem; /* Largura */
+  height: 7.2rem; /* Altura */
+
+  align-items: center; /* Alinhei os itens ao centro */
+  justify-content: space-between; /* Dei um espaco entre os itens*/
+  margin-inline: 12.4rem; /* Apliquei a margem-left e right em 124px */
+}
+a {
+  text-decoration: none; /* Retirei a decoracao padrao do hyperlink, apelido de ancora. */
+  color: #00856f; /* Defini uma cor para o hyperlink */
+}
+.menu button {
+  box-sizing: border-box; /*  */
+
+  background: none; /* Tirei o fundo do botao */
+  border: 0.1rem solid #00856f; /* Defini uma cor para a bordao como tambem sua largura*/
+  border-radius: 4rem; /* Arredondei o botao */
+  width: 19rem; /* Defini uma largura */
+  height: 3.8rem; /* Defini uma altura */
+  font-size: 1.4rem; /* Apliquei um tamanho a fonte */
+  line-height: 1.8rem; /* Altura da linha */
+  text-transform: uppercase; /* Defini todas as letras como maiusculas */
+  color: #00856f; /* Apliquei uma cor ao texto*/
+
+  margin-right: 22.3rem; /* Adicionei uma margem de seguranca na direita*/
+  margin-top: 2.4rem; /* Adicionei uma margem de seguranca em cima */
+}
+
+.logo button {
+  background: none; /* Retirei o fundo do botao */
+  border: none; /* Retirei a borda */
+  position: absolute; /* Com esse comando liberamos a opcao de manipular a posicao dele, usando o conceito de plano cartesiano*/
+  left: 10rem; /* Defini a posicao exata onde eu quero que o botao fique */
+  top: 2.691rem; /* Defini a posicao exata onde eu quero que o botao fique */
+  margin-top: 0; /* Retirei a margem do topo */
+}
+
+button {
+  cursor: pointer; /* Fiz com que todos os botao do site perceba que quando o cursor do mouse, passar em cima. 
+  Ele vire um ponteiro */
+}
+
+.itens ul {
+  margin-left: 25rem; /* Defini uma margem de seguranca a esquerda */
+  margin-top: 2.4rem; /* Defini uma margem de seguranca em cima */
+  display: flex; /* Alinhei os itens em linha */
+  gap: 3.2rem; /* Adicionei um espacamento entre eles de 32px */
+  list-style: none; /* Retirei os pontinhos que fica da lista, basta deixar o estilo none. */
+
+  font-weight: 700; /* Adiocionei um peso a fonte */
+  font-size: 1.6rem; /* Apliquei um tamanho a fonte */
+  line-height: 2.1rem; /* Defini uma altura a linha*/
+}
