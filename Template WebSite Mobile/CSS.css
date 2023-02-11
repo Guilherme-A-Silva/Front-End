@@ -1,0 +1,221 @@
+* {
+  margin: 1;
+  box-sizing: border-box;
+}
+:root {
+  --cor-primaria: #00856f;
+  --cor-secundaria: #212529;
+  --cor-paragrafo: #495057;
+
+  font-size: 62.5%; /* 1rem = 10px */
+}
+header {
+  width: 37.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+}
+body {
+  font-family: 'DM Sans';
+  font-size: 1.6rem;
+  text-align: center;
+}
+h4 {
+  color: var(--cor-primaria);
+  font-size: 1.4rem;
+}
+h1 {
+  color: var(--cor-secundaria);
+  font-size: 3.4rem;
+  line-height: 130%;
+}
+div p {
+  color: var(--cor-primaria);
+}
+p {
+  color: var(--cor-paragrafo);
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+header button {
+  background: var(--cor-primaria);
+  border-radius: 4rem;
+  border: none;
+
+  margin-bottom: 6rem;
+  width: 26.3rem;
+  height: 5.2rem;
+
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  left: 5.6rem;
+  top: 37.4rem;
+  margin-inline: auto;
+}
+.Stats {
+  box-sizing: border-box;
+  width: 32.7rem;
+
+  margin-inline: auto;
+  padding-block: 4rem;
+
+  display: flex;
+  border-radius: 0.6rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+
+  background-color: #fffaf1;
+}
+.stat p {
+  line-height: 130%;
+  margin: 0;
+}
+
+.stat h1 {
+  padding-block: 0.4rem;
+  line-height: 130%;
+  margin-bottom: 0.4rem;
+}
+header::before {
+  content: '';
+  width: 100%;
+  height: 108rem;
+  background-color: #dce9e2;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.imagem {
+  padding-block: 0;
+}
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 37.5rem;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+nav {
+  height: 37.5rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.Menu-Expandido {
+  overflow: hidden;
+}
+
+body.Menu-Expandido .open {
+  visibility: hidden;
+  opacity: 0;
+}
+
+body.Menu-Expandido .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00856f;
+
+  visibility: visible;
+  opacity: 1;
+  width: 37.5rem;
+  height: 89.6rem;
+}
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 4.8rem;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  text-align: center;
+
+  color: #fffaf1;
+  text-decoration: none;
+
+  margin-top: 6rem;
+}
+.Itens2 {
+  padding-top: 6rem;
+}
+.Itens2 button {
+  background: white;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+
+  margin-top: 4.8rem;
+  margin-bottom: 8.2rem;
+  color: #00856f;
+}
+.FECHAR {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 311px;
+  top: 16px;
+}
+.itens a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.menu .fechar button {
+  border: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 311px;
+  top: 16px;
+}
+.menu .logo {
+  position: absolute;
+  width: 132.86px;
+  height: 17.38px;
+  left: 24px;
+  top: 27px;
+}
